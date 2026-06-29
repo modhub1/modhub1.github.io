@@ -17,6 +17,8 @@
             --soft: #d8d8d8;
             --accent: #00c8ff;
             --accent-strong: #00a8d6;
+            --source: #8b5cf6;
+            --source-hover: #a78bfa;
             --good: #70e092;
             font-family: Inter, "Segoe UI", Arial, sans-serif;
         }
@@ -144,22 +146,35 @@
             align-items: center;
         }
 
-        .download {
+        .download,
+        .source {
             min-height: 52px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid #007da1;
             border-radius: 8px;
-            background: var(--accent-strong);
             color: #ffffff;
             padding: 0 20px;
             font-weight: 850;
             text-decoration: none;
         }
 
+        .download {
+            border: 1px solid #007da1;
+            background: var(--accent-strong);
+        }
+
         .download:hover {
             background: var(--accent);
+        }
+
+        .source {
+            border: 1px solid #6d28d9;
+            background: var(--source);
+        }
+
+        .source:hover {
+            background: var(--source-hover);
         }
 
         .file-meta {
@@ -196,7 +211,8 @@
                 font-size: clamp(42px, 16vw, 64px);
             }
 
-            .download {
+            .download,
+            .source {
                 width: 100%;
             }
         }
@@ -208,7 +224,7 @@
             <a class="brand" href="./" aria-label="ModHub">
                 <img src="Logo%20(text).png" alt="ModHub">
             </a>
-            <a class="header-download" href="https://www.dropbox.com/scl/fi/duvq4dode4vs5cnqqquxi/ModHub.exe?rlkey=afc4k9ukfihwj10awd7djvemw&st=9eydpkqc&dl=1" download>Download</a>
+            <a class="header-download" href="https://www.dropbox.com/scl/fi/0cil594n0z6cqd34qch41/ModHub.exe?rlkey=f6lilad1tp083azhyb5o3qnfi&st=8jidgizn&dl=1" download>Download</a>
         </div>
     </header>
 
@@ -218,12 +234,12 @@
                 <h1>Download ModHub for Windows</h1>
                 <p class="lead">Browse, install, manage, and launch Gorilla Tag mods from one clean desktop app. The download is bellow :)</p>
                 <div class="actions">
-                    <a class="download" href="https://www.dropbox.com/scl/fi/duvq4dode4vs5cnqqquxi/ModHub.exe?rlkey=afc4k9ukfihwj10awd7djvemw&st=9eydpkqc&dl=1" download>Download modHub</a>
+                    <a class="download" href="https://www.dropbox.com/scl/fi/0cil594n0z6cqd34qch41/ModHub.exe?rlkey=f6lilad1tp083azhyb5o3qnfi&st=8jidgizn&dl=1" download>Download ModHub</a>
+                    <a class="source" href="https://google.com/hello">Source Code</a>
                     <span class="file-meta">Windows x64 build</span>
                 </div>
             </div>
         </section>
-
     </main>
 </body>
 </html>
